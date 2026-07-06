@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Drives Fuel Economy? &mdash; A Narrative Visualization of 2017 Cars</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-svg-annotation@2.5.1/d3-annotation.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>What Drives Fuel Economy?</h1>
+      <p id="subtitle">A guided tour of the 2017 model-year automobiles</p>
+    </header>
+
+    <nav id="scene-nav">
+      <button id="btn-prev" class="nav-btn">&#8592; Back</button>
+      <div id="dots"></div>
+      <button id="btn-next" class="nav-btn">Next &#8594;</button>
+    </nav>
+
+    <section id="scene-header">
+      <h2 id="scene-title"></h2>
+      <p id="scene-desc"></p>
+    </section>
+
+    <div id="controls"></div>
+
+    <div id="chart-wrap">
+      <svg id="chart"></svg>
+      <div id="tooltip" class="hidden"></div>
+    </div>
+
+    <footer>
+      <p>Data: <a href="https://flunky.github.io/cars2017.csv" target="_blank" rel="noopener">2017 automobile fuel-economy data</a>
+         &middot; Built with D3.js and d3-annotation</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
